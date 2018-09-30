@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PopularMoviesStage1BC</string>
+    <string name="data_not_avaible_are_you_network_connected">data_not_avaible_are_you_network_connected</string>
+    <string name="retry">retry</string>
+    <string name="image_poster">Image Poster</string>
+    <string name="title">Title</string>
+    <string name="plot_synopsis">Plot Synopsis</string>
+    <string name="user_rating">User Rating</string>
+    <string name="release_date">Release Date</string>
+</resources>
