@@ -170,10 +170,23 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                 errorNetworkApi();
                 return null;
             }
-            errorNetworkApi();
-            tv_error.setText(R.string.missing_api_key);
-            btn_retry.setVisibility(View.INVISIBLE);
-            return null;
+            if (MovieUrlUtils.API_KEY.equals("")) {
+                errorNetworkApi();
+                tv_error.setText(R.string.missing_api_key);
+                btn_retry.setVisibility(View.INVISIBLE);
+                return null;
+            }
+            URL movieUrl = MovieUrlUtils.buildUrl(strings[0]);
+
+            String movieResponse;
+            try {
+                movieResponse = MovieUrlUtils.getResponseFromHttp(movieUrl);
+                mMovie = MovieJsonUtils.parseJsonMoview(movieResponse);
+            } catch (Exception e) {
+
+                e.printStackTrace();
+            }
+            return mMovie;
         }
 
         @Override

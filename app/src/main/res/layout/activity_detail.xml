@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:layout_marginTop="4dp"
-            android:textColor="black"
+            android:textColor="#000"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
-            android:textColor="black"
+            android:textColor="#000"
             android:textSize="18sp"
             android:textStyle="bold" />
         <TextView
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
-            android:textColor="black"
+            android:textColor="#000"
             android:textSize="18sp"
             android:textStyle="bold" />
 

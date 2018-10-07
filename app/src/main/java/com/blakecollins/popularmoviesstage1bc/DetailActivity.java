@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 public class DetailActivity extends AppCompatActivity {
 
     private static final String URL_IMAGE_PATH = "http://image.tmdb.org/t/p/w185";
